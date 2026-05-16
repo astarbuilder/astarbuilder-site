@@ -12,9 +12,9 @@ body {
 }
 
 header {
-  background:
-linear-gradient(rgba(35,35,35,0.92), rgba(35,35,35,0.92)),
-url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+ background:
+linear-gradient(rgba(35,35,35,0.94), rgba(35,35,35,0.94)),
+url('https://www.transparenttextures.com/patterns/clean-gray-paper.png');
   padding: 15px 0;
   position: sticky;
   top: 0;
