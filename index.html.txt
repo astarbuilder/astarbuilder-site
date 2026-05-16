@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Star Builder | Extensions & Design Visualisation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>A Star Builder</h1>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#calculator">Estimator</a>
+        <a href="#sketchup">SketchUp Design</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>See your extension before you build it</h2>
+      <p>Professional home extensions, conservatories & SketchUp visualisation services.</p>
+      <a href="#calculator" class="btn">Get an Estimate</a>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>House Extensions</h3>
+          <p>Rear, side, wraparound extensions built with practical construction knowledge.</p>
+        </div>
+
+        <div class="card">
+          <h3>Conservatories</h3>
+          <p>Warm roofs, replacements and modern glass extensions.</p>
+        </div>
+
+        <div class="card">
+          <h3>SketchUp Visualisation</h3>
+          <p>See your project in 3D before committing to build.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator" class="section dark">
+    <div class="container">
+      <h2>Extension Cost Estimator</h2>
+
+      <div class="form">
+        <label>Width (m)</label>
+        <input type="number" id="width">
+
+        <label>Depth (m)</label>
+        <input type="number" id="depth">
+
+        <label>Finish Level</label>
+        <select id="quality">
+          <option value="1800">Basic</option>
+          <option value="2200" selected>Standard</option>
+          <option value="2800">Premium</option>
+        </select>
+
+        <button onclick="calculate()">Calculate Estimate</button>
+
+        <div id="result"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sketchup" class="section">
+    <div class="container">
+      <h2>SketchUp Design Service</h2>
+      <p>
+        Get a 3D visual of your extension before you build. Helps you choose layout, style, and budget confidently.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Basic – £99</h3>
+          <p>Simple concept visual</p>
+        </div>
+
+        <div class="card">
+          <h3>Standard – £299</h3>
+          <p>Detailed 3D model + layout options</p>
+        </div>
+
+        <div class="card">
+          <h3>Premium – £599</h3>
+          <p>Full design pack + build guidance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section dark">
+    <div class="container">
+      <h2>Contact</h2>
+
+      <p>Get in touch about your project or SketchUp design.</p>
+
+      <a class="btn" href="mailto:info@astarbuilder.co.uk">Email Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 A Star Builder</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
