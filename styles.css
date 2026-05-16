@@ -12,19 +12,35 @@ body {
 }
 
 header {
-  background: #111;
-  color: white;
-  padding: 20px 0;
+  background: rgba(0,0,0,0.9);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
-header h1 {
-  margin: 0;
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
   color: white;
-  margin-right: 15px;
+  margin-left: 25px;
   text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #6cff47;
+}
+
+.logo {
+  height: 55px;
+  width: auto;
 }
 
 .hero {
