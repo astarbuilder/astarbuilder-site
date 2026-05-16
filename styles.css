@@ -12,7 +12,9 @@ body {
 }
 
 header {
-  background: rgba(0,0,0,0.9);
+  background:
+linear-gradient(rgba(35,35,35,0.92), rgba(35,35,35,0.92)),
+url('https://www.transparenttextures.com/patterns/concrete-wall.png');
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -77,7 +79,10 @@ nav a:hover {
 }
 
 .dark {
-  background: #111;
+  background:
+  linear-gradient(rgba(40,40,40,0.96), rgba(40,40,40,0.96)),
+  url('https://www.transparenttextures.com/patterns/concrete-wall.png');
+
   color: white;
 }
 
