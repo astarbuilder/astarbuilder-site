@@ -38,11 +38,6 @@ nav a:hover {
   color: #6cff47;
 }
 
-.logo {
-  height: 55px;
-  width: auto;
-}
-
 .hero {
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
