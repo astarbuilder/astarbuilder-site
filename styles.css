@@ -142,3 +142,22 @@ footer {
   border-radius: 16px;
   display: block;
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: white;
+  padding: 16px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.05);
+}
