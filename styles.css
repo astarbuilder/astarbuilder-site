@@ -604,3 +604,138 @@ footer {
   }
 
 }
+
+
+/* =========================
+   FEATURED PROJECTS
+   ========================= */
+
+.featured-projects {
+    background: #f5f5f5;
+    padding: 80px 0;
+}
+
+.featured-projects .project-label {
+    color: #39e639;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.featured-projects-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.featured-projects-heading h2 {
+    font-size: 2.2rem;
+    margin: 0 0 12px;
+}
+
+.featured-projects-heading p {
+    max-width: 650px;
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.featured-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.featured-project-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.featured-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.14);
+}
+
+.featured-project-card > a {
+    display: block;
+    overflow: hidden;
+}
+
+.featured-project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.featured-project-card:hover img {
+    transform: scale(1.03);
+}
+
+.featured-project-content {
+    padding: 25px;
+}
+
+.featured-project-content .project-location {
+    color: #555;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin: 0 0 10px;
+}
+
+.featured-project-content h3 {
+    font-size: 1.35rem;
+    margin: 0 0 12px;
+}
+
+.featured-project-content > p:not(.project-location) {
+    color: #555;
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+.featured-projects .project-link {
+    color: #111;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.featured-projects .project-link:hover {
+    color: #2bcf2b;
+}
+
+
+/* FEATURED PROJECTS - MOBILE */
+
+@media (max-width: 800px) {
+
+    .featured-projects {
+        padding: 55px 0;
+    }
+
+    .featured-projects-heading {
+        display: block;
+    }
+
+    .featured-projects-heading > .project-link {
+        display: inline-block;
+        margin-top: 18px;
+    }
+
+    .featured-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-project-card img {
+        height: 230px;
+    }
+
+}
