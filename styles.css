@@ -487,3 +487,120 @@ footer {
   }
 
 }
+
+/* ========================================
+   PROJECTS PAGE - FINAL LAYOUT OVERRIDES
+   ======================================== */
+
+.projects-page .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.projects-page .project-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  min-width: 0;
+}
+
+.projects-page .project-card > a:first-child {
+  display: block;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.projects-page .project-card img {
+  display: block;
+  width: 100% !important;
+  height: 240px !important;
+  max-width: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.projects-page .project-card-content {
+  padding: 25px;
+  flex-grow: 1;
+}
+
+.projects-page .project-card h2 {
+  font-size: 1.45rem;
+  line-height: 1.25;
+  margin: 8px 0 14px;
+}
+
+.projects-page .project-location {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #555;
+  margin: 0;
+}
+
+.projects-page .project-card-content p {
+  line-height: 1.6;
+}
+
+.projects-page .project-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+  border-bottom: 2px solid #6cff47;
+}
+
+
+/* COMING SOON */
+
+.projects-page .project-placeholder {
+  width: 100%;
+  height: 240px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-page .project-placeholder span {
+  color: #6cff47;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+  .projects-page .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .projects-page .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-page .project-card > a:first-child,
+  .projects-page .project-card img,
+  .projects-page .project-placeholder {
+    height: 220px !important;
+  }
+
+}
