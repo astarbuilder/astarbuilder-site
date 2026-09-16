@@ -894,3 +894,38 @@ footer {
         padding: 30px 20px;
     }
 }
+
+/* =========================
+   HERO BUTTONS
+   ========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hero-buttons .btn {
+    margin-top: 0;
+}
+
+.hero-buttons .btn-secondary {
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 26px;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background: #fff;
+    color: #111;
+}
+
+@media (max-width: 600px) {
+    .hero-buttons {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
