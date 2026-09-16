@@ -205,30 +205,63 @@
     </div>
 </section>
 
-  <section id="calculator" class="section dark">
+  <section id="calculator" class="section dark estimator-section">
     <div class="container">
-      <h2>Extension Cost Estimator</h2>
 
-      <div class="form">
-        <label>Width (m)</label>
-        <input type="number" id="width">
+        <p class="estimator-label">PROJECT COST GUIDE</p>
+        <h2>Project Cost Estimator</h2>
 
-        <label>Depth (m)</label>
-        <input type="number" id="depth">
+        <p class="estimator-intro">
+            Enter the approximate size of the new space to get an initial indication
+            of what your project could cost.
+        </p>
 
-        <label>Finish Level</label>
-        <select id="quality">
-          <option value="2200">Basic</option>
-          <option value="2800" selected>Standard</option>
-          <option value="3500">Premium</option>
-        </select>
+        <div class="estimator-box">
 
-        <button onclick="calculate()">Calculate Estimate</button>
+            <div class="estimator-fields">
 
-        <div id="result"></div>
-      </div>
+                <div class="estimator-field">
+                    <label for="width">Width</label>
+                    <div class="input-with-unit">
+                        <input type="number" id="width" min="1" step="0.1" placeholder="e.g. 5">
+                        <span>metres</span>
+                    </div>
+                </div>
+
+                <div class="estimator-field">
+                    <label for="depth">Depth</label>
+                    <div class="input-with-unit">
+                        <input type="number" id="depth" min="1" step="0.1" placeholder="e.g. 4">
+                        <span>metres</span>
+                    </div>
+                </div>
+
+                <div class="estimator-field">
+                    <label for="quality">Specification</label>
+                    <select id="quality">
+                        <option value="2200">Value</option>
+                        <option value="2800" selected>Standard</option>
+                        <option value="3500">Premium</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <p class="estimator-note">
+                Choose the specification level that most closely reflects the project
+                you have in mind. You can change it and compare different estimates.
+            </p>
+
+            <button class="estimator-button" onclick="calculate()">
+                Calculate My Estimate
+            </button>
+
+            <div id="result" class="estimator-result"></div>
+
+        </div>
+
     </div>
-  </section>
+</section>
 
   <section id="sketchup" class="section">
     <div class="container design-services">
