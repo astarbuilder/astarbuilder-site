@@ -1010,3 +1010,130 @@ footer {
         font-size: 2rem;
     }
 }
+
+
+/* =========================
+   PROJECT COST ESTIMATOR
+   ========================= */
+
+.estimator-section {
+    padding: 80px 0;
+}
+
+.estimator-section .estimator-label {
+    color: #39e639;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.estimator-section h2 {
+    font-size: 2.2rem;
+    margin: 0 0 12px;
+}
+
+.estimator-intro {
+    max-width: 680px;
+    color: #d0d0d0;
+    line-height: 1.7;
+    margin: 0 0 35px;
+}
+
+.estimator-box {
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 35px;
+}
+
+.estimator-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.estimator-field label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.estimator-field input,
+.estimator-field select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 52px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 1rem;
+    background: #fff;
+    color: #111;
+}
+
+.input-with-unit {
+    position: relative;
+}
+
+.input-with-unit input {
+    padding-right: 75px;
+}
+
+.input-with-unit span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 0.85rem;
+    pointer-events: none;
+}
+
+.estimator-note {
+    color: #bbb;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.estimator-button {
+    display: inline-block;
+    border: 0;
+    border-radius: 8px;
+    padding: 14px 28px;
+    background: #6cff47;
+    color: #111;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.estimator-button:hover {
+    transform: translateY(-2px);
+}
+
+.estimator-result {
+    margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+
+    .estimator-section {
+        padding: 55px 0;
+    }
+
+    .estimator-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .estimator-box {
+        padding: 25px 20px;
+    }
+
+    .estimator-section h2 {
+        font-size: 2rem;
+    }
+}
