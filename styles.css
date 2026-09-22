@@ -1223,3 +1223,53 @@ footer {
         padding: 22px 18px;
     }
 }
+
+/* =========================
+   CONTACT
+   ========================= */
+
+#contact {
+    padding: 80px 0;
+}
+
+#contact .contact-label {
+    color: #39e639;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+#contact h2 {
+    font-size: 2.4rem;
+    margin: 0 0 15px;
+}
+
+.contact-intro {
+    max-width: 700px;
+    color: #ddd;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0 0 12px;
+}
+
+.contact-reassurance {
+    max-width: 700px;
+    color: #aaa;
+    line-height: 1.7;
+    margin: 0;
+}
+
+#contact .btn {
+    margin-top: 25px;
+}
+
+@media (max-width: 800px) {
+    #contact {
+        padding: 55px 0;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+}
